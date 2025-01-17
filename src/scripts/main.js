@@ -10,7 +10,7 @@ const firstPromise = new Promise((resolve, reject) => {
   }, 3000);
 });
 
-const secondPromice = new Promise((resolve, reject) => {
+const secondPromise = new Promise((resolve, reject) => {
   document.addEventListener('mousedown', () => {
     resolve('Second promise was resolved');
   });
@@ -60,5 +60,5 @@ function promiseResult(promise) {
 }
 
 promiseResult(firstPromise);
-promiseResult(secondPromice);
+promiseResult(secondPromise);
 promiseResult(thirdPromise);
